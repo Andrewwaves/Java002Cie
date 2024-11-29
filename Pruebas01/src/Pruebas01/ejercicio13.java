@@ -5,9 +5,11 @@ public class ejercicio13 {
 	public static void main(String[] args) {
 	
 		String cadena1= "hola";
+		//para imprimir el caracter de una posicion en concreto
 		//System.out.println(cadena1);
 	//	System.out.println(cadena1.charAt(0));
 		
+		//para imprimir el caracter de una posicion en concreto
 		//char caracter1= cadena1.charAt(1);
 		//System.out.println(caracter1);
 		

@@ -4,12 +4,17 @@ public class ejercicio15 {
 
 	public static void main(String[] args) {
 	
-		String cadena="hola que x tal estás";
+		//establecemos la cadena
+		String cadena="hola que x tal esxtás";
+		//recorremos la cadena entera
 		for (int i=0;i<cadena.length();i++) {
-			
+		//System.out.println(cadena.charAt(i)); para imprimir todos los caracteres
+		//esto se puede hacer o no
 	char caracter= cadena.charAt(i);
-			if (caracter=='x') {System.out.println(i);
-			}
+	//la condicion de que si es x imprimir la posicion
+			if (caracter=='x') {System.out.println(i);}
+			//o ahorrarte la variable caracter y hacer:
+			//if(cadena.charAt(i)=='x') System.out.println(i);
 	}
 }
 }
