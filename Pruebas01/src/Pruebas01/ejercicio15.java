@@ -4,15 +4,12 @@ public class ejercicio15 {
 
 	public static void main(String[] args) {
 	
-		String cadena="hola que tal estás";
-		int contador=0;
+		String cadena="hola que x tal estás";
 		for (int i=0;i<cadena.length();i++) {
 			
 	char caracter= cadena.charAt(i);
-			if (caracter=='a'|| caracter=='á') {System.out.println(caracter);
-			contador++;
+			if (caracter=='x') {System.out.println(i);
 			}
-			}
-		System.out.println(contador);
+	}
 }
 }
