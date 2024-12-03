@@ -22,6 +22,7 @@ public class Bombilla {
 	public void Decrementar() {
 		setIntensidad(getIntensidad()-1);
 		//intensidad=intensidad-1;
+		//con los ultimos cambios se utiliza la condicion directamente del setIntensidad donde incrementas o decrementas junto con el get que es donde tienes el valor actual
 	}
 }
 

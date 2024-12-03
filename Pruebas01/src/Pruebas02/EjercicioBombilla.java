@@ -21,5 +21,4 @@ public class EjercicioBombilla {
 		System.out.println("La intensidad de la bombilla es: "+b.getIntensidad());
 		}
 	
-	
 }
