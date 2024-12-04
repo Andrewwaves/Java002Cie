@@ -1,6 +1,6 @@
 package Pruebas01;
 
-public class EjercicioClase02Funcion {
+public class EjercicioClase01Funcion {
 
 	public static void main(String[] args) {
 	
@@ -11,9 +11,6 @@ public class EjercicioClase02Funcion {
 			System.out.println(lista[i]*lista[i]);
 			i++;
 		}
-		
-		
-		
 	}
 	
 }

@@ -21,6 +21,7 @@ public class Cuadrado {
 	}
 	
 	public void setLado2(int l2) {
+		if(lado1==lado2)
 		lado2=l2;
 	}
 }

@@ -12,6 +12,7 @@ public class EjercicioClase02 {
 		for (int i=0;i<cadena.length();i++) {
 			
 			//y ponemos el char para que te lea los caracteres
+			//recalcar esto para no mirarlo
 			char caracter=cadena.charAt(i);
 			//la condicion de las vocales
 			if(caracter =='a' || caracter=='e' || caracter=='i' || caracter=='o' || caracter=='u' || caracter=='á') 

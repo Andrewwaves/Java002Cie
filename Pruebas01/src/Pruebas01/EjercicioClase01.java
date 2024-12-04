@@ -16,7 +16,5 @@ public class EjercicioClase01 {
 		System.out.println(numero*numero);
 		}
 	}
-	
-	
 
 }

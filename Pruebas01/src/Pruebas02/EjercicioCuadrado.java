@@ -11,6 +11,9 @@ public class EjercicioCuadrado {
 		c1.setLado1(20);
 		c1.setLado2(30);
 		
+		
+		System.out.println(c1.getLado1());
+		System.out.println(c1.getLado2());
 	//	if (c1.setLado1 == c1.setLado2) { System.out.println(c1.getLado1());
 	//	System.out.println(c1.getLado2());
 		
