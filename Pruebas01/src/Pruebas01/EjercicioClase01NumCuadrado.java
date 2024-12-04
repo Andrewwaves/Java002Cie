@@ -1,6 +1,6 @@
 package Pruebas01;
 
-public class EjercicioClase01 {
+public class EjercicioClase01NumCuadrado {
 
 	public static void main(String[] args) {
 		//imprimir por la pantalla usando un bucle while el cuadrado de los primeros 10 numeros

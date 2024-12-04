@@ -1,6 +1,6 @@
 package Pruebas01;
 
-public class EjercicioClase02 {
+public class EjercicioClase02Vocales {
 
 	public static void main(String[] args) {
 		// recorrer la cadena "hola amigos que tal estas"e imprimir sus vocales por la consola

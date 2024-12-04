@@ -2,7 +2,7 @@ package Pruebas01;
 
 import MasObjetos.Persona;
 
-public class Principal01 {
+public class Principal01PersonaConstructor {
 
 	public static void main(String[] args) {
 	

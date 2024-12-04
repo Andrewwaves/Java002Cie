@@ -2,30 +2,30 @@ package MasObjetos;
 
 public class Caja {
 
-	private int alto;
-	private int largo;
-	private int profundo;
+	private int Alto;
+	private int Largo;
+	private int Profundo;
 	
 	public int getAlto() {
-		return alto;
+		return Alto;
 	}
 	public void setAlto(int alto) {
 		if(alto>0)
-		this.alto = alto;
+		this.Alto = alto;
 	}
 	public int getLargo() {
-		return largo;
+		return Largo;
 	}
 	public void setLargo(int largo) {
 		if(largo>0)
-		this.largo = largo;
+		this.Largo = largo;
 	}
 	public int getProfundo() {
-		return profundo;
+		return Profundo;
 	}
 	public void setProfundo(int profundo) {
 		if(profundo>0)
-		this.profundo = profundo;
+		this.Profundo = profundo;
 	}
 	
 	public Caja(int alto, int largo, int profundo) {
@@ -36,6 +36,6 @@ public class Caja {
 	}
 	
 	public int Volumen() {
-		return alto*largo*profundo;
+		return Alto*Largo*Profundo;
 	}
 }
