@@ -11,17 +11,33 @@ public class Cuadrado {
 		return lado1;
 	}
 	
-	public void setLado1(int l1) {
-		if(lado1==lado2)
-		lado1=l1;
+	public void setLado1(int lado1) {
+		this.lado1=lado1;
+		this.lado2=lado1;
 	}
 	
 	public int getLado2() {
 		return lado2;
 	}
 	
-	public void setLado2(int l2) {
-		if(lado1==lado2)
-		lado2=l2;
+	public void setLado2(int lado2) {
+		this.lado2=lado2;
+		this.lado1=lado2;
 	}
+
+	public Cuadrado(int lado1, int lado2) {
+		super();
+		this.lado1 = lado1;
+		this.lado2 = lado2;
+	}
+	
+	//public static double area(int lado){
+	//return lado*lado;
+	
+		public double area() {
+			return lado1*lado2;
+		}
+		
+		//public double area(){
+		//return Cuadrado.area(lado1);
 }

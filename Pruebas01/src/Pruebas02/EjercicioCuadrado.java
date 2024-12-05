@@ -6,21 +6,13 @@ public class EjercicioCuadrado {
 
 	public static void main(String[] args) {
 	
-		Cuadrado c1=new Cuadrado();
+		Cuadrado c1=new Cuadrado(2,2);
+	
 		
-		c1.setLado1(20);
-		c1.setLado2(30);
+		System.out.println(c1.area());
+		//METODO ESTÁTICO:
+		//System.out.println(Cuadrado.area(3));
 		
-		
-		System.out.println(c1.getLado1());
-		System.out.println(c1.getLado2());
-	//	if (c1.setLado1 == c1.setLado2) { System.out.println(c1.getLado1());
-	//	System.out.println(c1.getLado2());
-		
-		//}else {System.out.println("Error");
-		
-
 	}
 
 }
-//}
