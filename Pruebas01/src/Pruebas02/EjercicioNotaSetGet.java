@@ -1,6 +1,6 @@
 package Pruebas02;
 
-import Objetos.Nota;
+import Objetos.NotaGetYSet;
 
 public class EjercicioNotaSetGet {
 
@@ -8,7 +8,7 @@ public class EjercicioNotaSetGet {
 		
 		//estableces la conexion con la clase nota organize imports
 		//lamar clase, nombre variable= espacio nuevo, llamar a la clase con parentesis
-		Nota nota1=new Nota();
+		NotaGetYSet nota1=new NotaGetYSet();
 		nota1.setValor(700);
 		//importante porner el .valor que has establecido en el objeto de Nota donde pusiste:
 		//public double valor;

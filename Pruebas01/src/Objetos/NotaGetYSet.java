@@ -1,6 +1,6 @@
 package Objetos;
 
-public class Nota {
+public class NotaGetYSet {
 
 	//cambiamos de public a private
 	private double Valor;

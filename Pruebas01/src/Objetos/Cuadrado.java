@@ -12,6 +12,7 @@ public class Cuadrado {
 	}
 	
 	public void setLado1(int lado1) {
+		
 		this.lado1=lado1;
 		this.lado2=lado1;
 	}
