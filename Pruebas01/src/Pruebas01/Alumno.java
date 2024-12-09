@@ -17,10 +17,14 @@ public class Alumno {
 
 		public void setNota(int nota) {
 			if (nota<5) System.out.println("Suspenso");
-			else if (nota>=5 && nota<7) {System.out.println("Notable");
-			}else {System.out.println("Sobresaliente");}
-			this.nota = nota;
-		}
+		//	else if (nota>=5 && nota<6) 
+		//	{System.out.println("Aprobado");
+			}
+		//	else if (nota>=6 && nota<8) 
+		//	{System.out.println("Notable");
+		//	} else (nota>=8 && nota<=10) {System.out.println("Sobresaliente");}
+			
+			
 
 		public Alumno(int nota) {
 			setNota(nota);
