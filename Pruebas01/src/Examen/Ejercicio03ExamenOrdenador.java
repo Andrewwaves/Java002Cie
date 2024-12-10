@@ -4,10 +4,19 @@ public class Ejercicio03ExamenOrdenador {
 
 	public static void main(String[] args) {
 		
-		Ordenador ordenador1=new Ordenador();
+		Ordenador ordenador1=new Ordenador(false);
 		
-
-		ordenador1.estado = false;
+		System.out.println(ordenador1.estaEncendido());
+		
+		ordenador1.encender();
+		
+		System.out.println(ordenador1.estaEncendido());
+		
+		ordenador1.apagar();
+		
+		System.out.println(ordenador1.estaEncendido());
+		
+		
 	}
 
 }

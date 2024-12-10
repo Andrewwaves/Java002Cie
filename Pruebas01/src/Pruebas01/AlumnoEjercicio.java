@@ -8,7 +8,7 @@ public class AlumnoEjercicio {
 		Alumno alumno1= new Alumno(8);
 		
 		System.out.println(alumno1.imprimirNota());
-
+		
 	}
 
 }
