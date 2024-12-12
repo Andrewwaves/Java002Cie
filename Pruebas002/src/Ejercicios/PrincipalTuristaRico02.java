@@ -1,11 +1,12 @@
 package Ejercicios;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import Objeto.Maleta;
 import Objeto.TuristaRico;
 
-public class PrincipalTuristaRico {
+public class PrincipalTuristaRico02 {
 
 	public static void main(String[] args) {
 		
@@ -21,18 +22,19 @@ public class PrincipalTuristaRico {
 		//lamo al getMaleta de pepe y asigno la variable
 		ArrayList <Maleta> maletas= Pepe.getMaletas();
 		
-		for(int i=0; i<maletas.size();i++) {
+		
+		//for each, es un iterador [java.util.iterator<+
+		//por cada maleta m en la lista de maletas, imprimemelo, imprime el siguiente
+		
+		//for(Maleta m :maletas) {
 			
-			//variable que apunta a la lista de las maletas para manejar mejor la informacion
-			Maleta maletaR=maletas.get(i);
-			//2 opciones:
+			//System.out.println(m.getModelo());
+			//System.out.println(m.getPeso());
 			
-			System.out.println(maletaR.getModelo());
-			System.out.println(maletaR.getPeso());
-			
-			System.out.println(maletas.get(i).getModelo());
-			System.out.println(maletas.get(i).getPeso());
-			
+		Iterator<Maleta> it= maletas.iterator();
+		
+		while(it.hasNext()) {
+			System.out.println(it.next().getModelo());
 			
 			
 			
