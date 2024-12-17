@@ -25,5 +25,16 @@ public class PersonaRepository {
 			} 
 		   }
 		
-
+public void quitar (String nombre) {
+		
+		 try {
+			 Connection conexion = DriverManager.getConnection(DB_URL, USER, PASS);
+		     Statement sentencia = conexion.createStatement();
+		     sentencia.executeUpdate("delete from personas where nombre ='" +nombre+"'");
+		     
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} 
+	}
 }
