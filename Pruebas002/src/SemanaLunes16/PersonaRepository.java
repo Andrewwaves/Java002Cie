@@ -12,8 +12,8 @@ public class PersonaRepository {
 	   static final String PASS = "";
 	   static final String QUERY = "SELECT * from Personas";
 
-	//capa de persistencia
-	   //capa de negocio: separar las responsabilidades y agruparlas (objetos)
+	 //capa de persistencia
+	   //capa de negocio: Ejemplo:PersonaRepositoryNueva
 	
 	public void insertar (String nombre, String apellidos,int edad) {
 		
