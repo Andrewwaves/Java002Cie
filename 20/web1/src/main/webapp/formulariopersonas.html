@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DATOS PERFIL</title>
+</head>
+<body>
+
+<form action="destinopersona.jsp" method="get">
+
+<p>
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre"/>
+</p>
+
+<p>
+<label for="apellidos">Apellidos:</label>
+<input type="text" name="apellidos" id="apellidos"/>
+</p>
+
+<p>
+<label for="fecha">Fecha Nacimiento:</label>
+<input type="date" name="fecha" id="fecha"/>
+</p>
+
+<!--desplegable con seleccion -->
+<p>
+<label for="lenguajes">Lenguaje:</label>
+<select name="lenguaje">
+<option>Java</option>
+<option>Php </option>
+<option>C#</option>
+</select>
+</p>
+
+<!--punticos de seleccion -->
+<p>
+<input type="radio" name="nivel" value="1"/> Básico
+<input type="radio" name="nivel" value="2"/> Avanzado
+<input type="radio" name="nivel" value="3"/> Pro
+</p>
+
+<!--checkbox valor buleano -->
+<p>
+<input type="checkbox" name="nuevo"/> Nuevo
+</p>
+
+<p>
+<input type="submit" value="enviar"/>
+</p>
+
+
+</form>
+</body>
+</html>
