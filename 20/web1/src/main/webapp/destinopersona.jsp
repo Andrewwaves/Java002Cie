@@ -18,6 +18,11 @@ String nombre= request.getParameter("nombre");
 String apellidos= request.getParameter("apellidos");
 String fechaTexto= request.getParameter("fecha");
 String lenguaje= request.getParameter("lenguaje");
+String nuevoTexto = request.getParameter("nuevo");
+String [] lista =request.getParameterValues("dispositivos");
+
+boolean nuevo= Boolean.parseBoolean(nuevoTexto);
+
 
 //parse es para traducir
 int nivel= Integer.parseInt( request.getParameter("nivel"));
@@ -30,12 +35,21 @@ Date fecha=formateador.parse(fechaTexto);
 calendario.setTime(fecha);
 
 int mes=calendario.get(Calendar.MONTH)+1;
+
+//lista de las opciones de los dispositivos
+out.println ("<ul>");
+for (int i=0;i<lista.length;i++){
+	out.println("<li>"+lista[i]+"</li>");
+}
+out.println ("</ul>");
+
 out.println(nombre);
 out.println(apellidos);
 out.println(calendario.getTime());
 
 out.println("</br>");
 out.println("</br>");
+
 if(nivel==1){
 	out.println("el nivel es: Básico");
 }else if (nivel==2){
@@ -63,7 +77,12 @@ el mes es:
 el día es:
 <%=calendario.get(Calendar.DAY_OF_MONTH)%>
 </p>
-<% 
+
+<p>
+	<% if (nuevo) out.println ("es nuevo");%>
+</p>
+
+<%
 //si pones E es el dia de la semana
 DateFormat nuevoFormateador= new SimpleDateFormat("dd/MM/yyyy");
 out.println(nuevoFormateador.format(fecha));
