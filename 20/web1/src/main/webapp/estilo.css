@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+	
+	table{
+		background: #C70039;
+		font-family: tahoma;
+		font-size: 1.5em;
+		font-style: italic;
+		color: #ffffff;
+		font-variant: smallcaps;
+		padding: 3px;
+		
+		}
+		
+		h1{
+		font-family: sans-serif;
+		color: #FF5733;
+		
+		}
+		table caption{
+		
+		color:#da05ca;
+		font-size: 2.0em;
+		font-family:helvetic;
+		}
+		table, tr, td, th{
+		border:3px solid #900C3F;
+		}

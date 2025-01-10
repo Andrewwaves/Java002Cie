@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*selector de etiqueta*/
+
+	body{
+	
+	font-family: Calibri,sans-serif;
+	font-size:1.3em;
+	color: #333;
+	
+	}
+	
+	
+	table{
+	
+	background-color: #f8c2e3;
+	
+	}
+	caption{
+	
+	color: #ff0080;
+	padding:0.8em;
+	}
+	
+	thead{
+	background-color: #f8c2e3;
+	}
+	
+	tbody{
+	font-family: calibri;
+	font-style: italic;
+	background-color: #ff0080;
+	
+	}
+	
+	/*Selector de grupo */
+	tbody, tr, td{
+	text-align:center;
+	}
