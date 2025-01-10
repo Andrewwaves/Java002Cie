@@ -23,19 +23,19 @@
 		</thead>
 		<tbody>
 			<tr>
-				<th> dato1 </th>
-				<th> dato2 </th>
-				<th> dato3 </th>
+				<td> dato1 </td>
+				<td> dato2 </td>
+				<td> dato3 </td>
 			</tr>
 			<tr>
-				<th> dato1 </th>
-				<th> dato2 </th>
-				<th> dato3 </th>
+				<td> dato1 </td>
+				<td> dato2 </td>
+				<td> dato3 </td>
 			</tr>
 			<tr>
-				<th> dato1 </th>
-				<th> dato2 </th>
-				<th> dato3 </th>
+				<td> dato1 </td>
+				<td> dato2 </td>
+				<td> dato3 </td>
 			</tr>
 		</tbody>
 	</table>
