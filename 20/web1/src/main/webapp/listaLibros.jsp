@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-    <%@ page import="es.cie.repositories.LibroRepository" %>
+    <%@ page import="es.cie.repositories.*" %>
     <%@ page import="es.cie.negocio.libro" %>
     <%@ page import="java.util.List" %>
     
@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="estilo.css">
 </head>
 
-<% 
-LibroRepository repo=new LibroRepository();
+<%
+LibroRepository repo=new LibroRepositoryMemoria();
 List<libro> lista=repo.buscarTodos();
 %>
 <body>
@@ -28,9 +28,10 @@ List<libro> lista=repo.buscarTodos();
 			<th>Páginas</th>
 		</tr>
 	
-<% 
-//for each
-for(libro libro:lista){%>
+<%
+	//for each
+		for(libro libro:lista){
+	%>
 
 	<!-- fila o row tr (table row) -->
 	<tr>

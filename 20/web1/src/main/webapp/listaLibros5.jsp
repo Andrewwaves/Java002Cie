@@ -14,7 +14,7 @@
 </head>
 
 <%
-LibroRepository repo = new LibroRepositoryMemoria();
+LibroRepository repo = new LibroRepositoryJDBc();
 String tipobusqueda = request.getParameter("tipobusqueda");
 
 String textobusqueda = request.getParameter("textobusqueda");
