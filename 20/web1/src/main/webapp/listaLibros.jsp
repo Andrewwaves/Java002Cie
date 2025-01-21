@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
     <%@ page import="es.cie.repositories.*" %>
-    <%@ page import="es.cie.negocio.libro" %>
+    <%@ page import="es.cie.negocio.Libro" %>
     <%@ page import="java.util.List" %>
     
 <!DOCTYPE html>
@@ -14,8 +14,8 @@
 </head>
 
 <%
-LibroRepository repo=new LibroRepositoryMemoria();
-List<libro> lista=repo.buscarTodos();
+LibroRepositoryJDBC repo=new LibroRepositoryMemoria();
+List<Libro> lista=repo.buscarTodos();
 %>
 <body>
 <h1> Lista De Libros</h1>
@@ -30,7 +30,7 @@ List<libro> lista=repo.buscarTodos();
 	
 <%
 	//for each
-		for(libro libro:lista){
+		for(Libro libro:lista){
 	%>
 
 	<!-- fila o row tr (table row) -->

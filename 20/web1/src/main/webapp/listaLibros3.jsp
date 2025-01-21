@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
     <%@ page import="es.cie.repositories.*" %>
-    <%@ page import="es.cie.negocio.libro" %>
+    <%@ page import="es.cie.negocio.Libro" %>
     <%@ page import="java.util.List" %>
     
 <!DOCTYPE html>
@@ -14,10 +14,10 @@
 </head>
 
 <%
-LibroRepository repo=new LibroRepositoryMemoria();
+LibroRepositoryJDBC repo=new LibroRepositoryMemoria();
 String titulo= request.getParameter("titulo");
 String autor = request.getParameter ("autor");
-List<libro> lista =null;
+List<Libro> lista =null;
 
 if(titulo!=null){
 	lista=repo.buscarPorTitulo(titulo);
@@ -50,7 +50,7 @@ Autor: <input type="text" name="autor"/>
 	
 <% 
 //for each
-for(libro libro:lista){%>
+for(Libro libro:lista){%>
 
 	<!-- fila o row tr (table row) -->
 	<tr>

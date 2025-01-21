@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@ page import="es.cie.repositories.*"%>
-<%@ page import="es.cie.negocio.libro"%>
+<%@ page import="es.cie.negocio.Libro"%>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
@@ -14,16 +14,16 @@
 </head>
 
 <%
-LibroRepository repo = new LibroRepositoryJDBc();
+LibroRepository repo = new LibroRepositoryJDBC();
 String tipobusqueda = request.getParameter("tipobusqueda");
 
 String textobusqueda = request.getParameter("textobusqueda");
-List<libro> lista = null;
+List<Libro> lista = null;
 
 if (tipobusqueda != null && textobusqueda != null) {
-	if (tipobusqueda.equalsIgnoreCase("Título")) {
+	if (tipobusqueda.equalsIgnoreCase("titulo")) {
 		lista = repo.buscarPorTitulo(textobusqueda);
-	} else if (tipobusqueda.equalsIgnoreCase("Autor")) {
+	} else if (tipobusqueda.equalsIgnoreCase("autor")) {
 		lista = repo.buscarPorAutor(textobusqueda);
 
 	} else {
@@ -36,8 +36,8 @@ if (tipobusqueda != null && textobusqueda != null) {
 
 	<form method="get">
 		<select name="tipobusqueda">
-			<option>Título</option>
-			<option>Autor</option>
+			<option>titulo</option>
+			<option>autor</option>
 		</select> <input type="text" name="textobusqueda" /> <input type="submit"
 			value="Buscar" />
 	</form>
@@ -47,15 +47,15 @@ if (tipobusqueda != null && textobusqueda != null) {
 	<table border=1>
 		<caption>LIBROS</caption>
 		<tr>
-			<th>ISBN</th>
-			<th>Título</th>
-			<th>Autor</th>
-			<th>Páginas</th>
+			<th>isbn</th>
+			<th>titulo</th>
+			<th>autor</th>
+			<th>paginas</th>
 		</tr>
 
 		<%
 		//for each
-		for (libro libro : lista) {
+		for (Libro libro : lista) {
 		%>
 
 		<!-- fila o row tr (table row) -->

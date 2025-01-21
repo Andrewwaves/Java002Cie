@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="es.ascender.biblioteca.negocio.Socio"%>
+<%@ page import="es.ascender.biblioteca.repositories.jdbc.SocioRepositoryJDBC"%>
+<%@ page import="es.ascender.biblioteca.repositories.SocioRepository"%>
 <%@ page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
@@ -24,7 +26,18 @@
 
 	<%
 	
-	List<Socio> lista=(List<Socio>)request.getAttribute("lista");
+	//RESPONSABILIDAD DE CONTROL
+	SocioRepository repo = new SocioRepositoryJDBC();
+	List<Socio> lista = repo.buscarTodos();
+	
+	
+	if(request.getParameter("orden")!=null){
+		out.println("Jerarquía a base de "+request.getParameter("orden"));
+		lista=repo.buscarTodosOrdenados(request.getParameter("orden"));
+	}else {
+		out.println("No Jerarquía");
+		lista=repo.buscarTodos();
+	}
 
 	%>
 	<table class="table table-striped table-hover">

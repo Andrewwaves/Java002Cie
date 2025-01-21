@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@ page import="es.cie.repositories.*"%>
-<%@ page import="es.cie.negocio.libro"%>
+<%@ page import="es.cie.negocio.Libro"%>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
@@ -14,11 +14,11 @@
 </head>
 
 <%
-LibroRepository repo = new LibroRepositoryMemoria();
+LibroRepositoryJDBC repo = new LibroRepositoryMemoria();
 String tipobusqueda = request.getParameter("tipobusqueda");
 
 String textobusqueda = request.getParameter("textobusqueda");
-List<libro> lista = null;
+List<Libro> lista = null;
 
 if (tipobusqueda != null && textobusqueda != null) {
 	if (tipobusqueda.equalsIgnoreCase("Título")) {
@@ -55,7 +55,7 @@ if (tipobusqueda != null && textobusqueda != null) {
 
 		<%
 		//for each
-		for (libro libro : lista) {
+		for (Libro libro : lista) {
 		%>
 
 		<!-- fila o row tr (table row) -->
