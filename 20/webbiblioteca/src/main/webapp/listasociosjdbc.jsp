@@ -44,14 +44,15 @@
 			<td><%=s.getDni() %></td>
 			<td><%=s.getNombre() %></td>
 			<td><%=s.getApellidos() %></td>
-			<td><a href="borrarsociojdbc.jsp?dni=<%=s.getDni()%>">borrar</a></td>
+			<td><a href="?comando=borrarsocio&dni=<%=s.getDni()%>" 
+			class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">borrar</a></td>
 			
 		</tr>
 		<%} %>
 	</table>
 	
 	<!-- ancla, es un enlace a otra página -->
-	<a href="formulariosocio.html">insertar nuevos socios</a>
+	<a href="?comando=formulariosocio">insertar nuevos socios</a>
 	</div>
 </body>
 </html>

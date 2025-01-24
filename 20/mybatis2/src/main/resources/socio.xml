@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="es.ascender.biblioteca.repositories">
+  <select id="selectSocios" resultType="es.ascender.biblioteca.negocio.Socio">
+    select * from socios
+  </select>
+  
+  <select id="selectSociosOrdenados" resultType="es.ascender.biblioteca.negocio.Socio">
+    select * from socios order by nombre
+  </select>
+  
+  <insert id="insertarSocio" parameterType="es.ascender.biblioteca.negocio.Socio">
+  insert into socios (dni,nombre,apellidos) values (#{dni},#{nombre},#{apellidos})
+  </insert>
+  
+  <delete id="borrarSocio" parameterType="java.lang.String">
+  delete from socios where dni= #{dni}
+  </delete>
+  
+  
+</mapper>
